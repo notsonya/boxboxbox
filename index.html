@@ -5,20 +5,25 @@
 </head>
 <body>
     <form id="emailForm">
-        <label for="email">Email:</label>
+        <label for="email">Recipient's Email:</label>
         <input type="email" id="email" required>
+        <label for="subject">Email Subject:</label>
+        <input type="text" id="subject" required>
+        <label for="message">Email Message:</label>
+        <textarea id="message" required></textarea>
         <button type="button" id="sendEmail">Send Email</button>
     </form>
     <script>
         document.getElementById('sendEmail').addEventListener('click', function () {
-            const emailInput = document.getElementById('email').value;
+            const recipientEmail = document.getElementById('email').value;
+            const emailSubject = encodeURIComponent(document.getElementById('subject').value);
+            const emailMessage = encodeURIComponent(document.getElementById('message').value);
 
             // Compose the email subject and body
-            const subject = encodeURIComponent('Your Subject Here');
-            const body = encodeURIComponent('Your pre-typed email content goes here.');
+            const mailtoLink = 'mailto:' + recipientEmail + '?subject=' + emailSubject + '&body=' + emailMessage;
 
             // Open the user's email client with the pre-composed email
-            window.open('mailto:' + emailInput + '?subject=' + subject + '&body=' + body);
+            window.location.href = mailtoLink;
         });
     </script>
 </body>
@@ -79,6 +84,3 @@
 </h1>
 </html>
 
-    </script>
-</body>
-</html>
