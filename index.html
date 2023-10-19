@@ -2,33 +2,15 @@
 <html>
 <head>
     <title>Send Pre-typed Email</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <form id="emailForm">
-        <label for="email">Recipient's Email:</label>
-        <input type="email" id="email" required>
-        <label for="subject">Email Subject:</label>
-        <input type="text" id="subject" required>
-        <label for="message">Email Message:</label>
-        <textarea id="message" required></textarea>
-        <button type="button" id="sendEmail">Send Email</button>
-    </form>
-    <script>
-        document.getElementById('sendEmail').addEventListener('click', function () {
-            const recipientEmail = document.getElementById('email').value;
-            const emailSubject = encodeURIComponent(document.getElementById('subject').value);
-            const emailMessage = encodeURIComponent(document.getElementById('message').value);
-
-            // Compose the email subject and body
-            const mailtoLink = 'mailto:' + recipientEmail + '?subject=' + emailSubject + '&body=' + emailMessage;
-
-            // Open the user's email client with the pre-composed email
-            window.location.href = mailtoLink;
-        });
-    </script>
-</body>
-<h1>
-    <pre id="tiresult" style="font-size: 9px; background-color: #000000; font-weight: bold; padding: 4px 5px; --fs: 9px;"><b style="color:#000000">01100111000100100010010111000001101100001110011011001101000100111011111011001010011110011000010101101011111100101100101110111</b>
+<pre id="tiresult" style="font-size: 9px; background-color: #000000; font-weight: bold; padding: 4px 5px; --fs: 9px;"><b style="color:#000000">01100111000100100010010111000001101100001110011011001101000100111011111011001010011110011000010101101011111100101100101110111</b>
 <b style="color:#000000">11100011100100100111110101011100111111010000001000100001101110011010010101111010110001001100110000011100110111111100100010101</b>
 <b style="color:#000000">0101000</b><b style="color:#1B1D23">1</b><b style="color:#5D647F">0</b><b style="color:#5B627C">01001</b><b style="color:#5C637D">1101101011100101111101100110010100101010100011010100</b><b style="color:#5C637E">10</b><b style="color:#5C637D">011</b><b style="color:#5C637E">1111000010111000000111001101011000</b><b style="color:#5B627D">00</b><b style="color:#5B627C">0011</b><b style="color:#5C647E">1</b><b style="color:#17191F">0</b><b style="color:#000000">100111101001</b>
 <b style="color:#000000">0001101</b><b style="color:#393C4A">1</b><b style="color:#C1D0FF">1</b><b style="color:#BBCBFF">0</b><b style="color:#BBCAFF">0</b><b style="color:#BECEFF">1</b><b style="color:#C2D2FF">1</b><b style="color:#BECEFF">0</b><b style="color:#B9C9FF">0</b><b style="color:#B8C7FF">0</b><b style="color:#B8C8FF">1</b><b style="color:#B9C8FF">1</b><b style="color:#B8C7FF">10</b><b style="color:#B9C8FF">111</b><b style="color:#B8C8FF">0</b><b style="color:#B8C7FF">01</b><b style="color:#B8C7FE">0</b><b style="color:#B7C6FD">0</b><b style="color:#B8C7FF">0</b><b style="color:#B8C7FE">01</b><b style="color:#B8C7FF">10</b><b style="color:#B8C7FE">1</b><b style="color:#B7C6FE">0</b><b style="color:#B7C5FD">0</b><b style="color:#B6C5FC">0</b><b style="color:#B7C5FC">1</b><b style="color:#B7C6FC">1</b><b style="color:#B7C5FC">00</b><b style="color:#B7C6FE">10</b><b style="color:#B8C7FE">1</b><b style="color:#B8C7FF">00</b><b style="color:#B8C7FE">001</b><b style="color:#B8C6FE">0</b><b style="color:#B8C7FE">0100</b><b style="color:#B9C8FF">0</b><b style="color:#B6C5FC">0</b><b style="color:#B7C6FD">0</b><b style="color:#B9C8FF">0</b><b style="color:#B8C8FF">1</b><b style="color:#B8C7FE">01</b><b style="color:#B8C8FF">01</b><b style="color:#B8C7FE">1</b><b style="color:#B7C6FD">1</b><b style="color:#B6C4FA">1</b><b style="color:#B7C6FE">0</b><b style="color:#B8C7FF">1</b><b style="color:#B9C8FF">10</b><b style="color:#B8C7FE">1</b><b style="color:#B7C7FE">1</b><b style="color:#B7C6FE">1</b><b style="color:#B7C6FD">1</b><b style="color:#B8C7FF">1110</b><b style="color:#B9C8FF">101</b><b style="color:#B8C7FE">1</b><b style="color:#B8C7FF">1110</b><b style="color:#B6C5FC">1</b><b style="color:#B7C5FC">0</b><b style="color:#B8C7FF">1</b><b style="color:#B9C8FF">01</b><b style="color:#B8C7FF">0</b><b style="color:#B8C8FF">1</b><b style="color:#B8C7FF">0</b><b style="color:#B9C8FF">01</b><b style="color:#B8C7FF">1</b><b style="color:#B9C8FF">0</b><b style="color:#B8C7FF">0</b><b style="color:#B9C8FF">10000</b><b style="color:#B8C7FF">1</b><b style="color:#BAC9FF">0</b><b style="color:#BECEFF">1</b><b style="color:#C2D2FF">0</b><b style="color:#BDCDFF">1</b><b style="color:#BBCAFF">1</b><b style="color:#BBCBFF">0</b><b style="color:#BFCEFF">1</b><b style="color:#313442">1</b><b style="color:#000000">001001010010</b>
@@ -80,7 +62,28 @@
 <b style="color:#000000">0001111</b><b style="color:#353846">1</b><b style="color:#B5C4FA">0</b><b style="color:#B0BFF4">0</b><b style="color:#B0BEF4">0</b><b style="color:#B0BFF4">0</b><b style="color:#B4C3F9">1</b><b style="color:#B6C6FD">1</b><b style="color:#B7C7FE">0</b><b style="color:#B7C6FE">0</b><b style="color:#B7C7FE">1001</b><b style="color:#B7C6FE">000</b><b style="color:#B7C7FE">11</b><b style="color:#B7C6FE">0</b><b style="color:#B5C4FB">1</b><b style="color:#B5C3FA">0</b><b style="color:#B6C5FC">1</b><b style="color:#B7C6FD">011</b><b style="color:#B6C5FD">1</b><b style="color:#B7C6FE">1</b><b style="color:#B7C7FE">01010010110</b><b style="color:#B7C6FD">1</b><b style="color:#B6C6FD">0</b><b style="color:#B7C6FD">1101010</b><b style="color:#B6C6FD">1</b><b style="color:#B6C5FD">0</b><b style="color:#B6C5FC">00</b><b style="color:#B7C6FD">1</b><b style="color:#B7C7FE">0</b><b style="color:#B7C6FE">100</b><b style="color:#B7C7FE">0</b><b style="color:#B6C5FC">1</b><b style="color:#B5C4FA">0</b><b style="color:#B6C5FC">0</b><b style="color:#B7C6FD">0011</b><b style="color:#B6C5FD">0</b><b style="color:#B7C6FE">1</b><b style="color:#B7C7FE">0110</b><b style="color:#B7C6FE">0</b><b style="color:#B7C6FD">0011</b><b style="color:#B7C6FE">1</b><b style="color:#B7C7FE">11</b><b style="color:#B7C6FE">1</b><b style="color:#B6C5FC">00</b><b style="color:#B7C6FE">0</b><b style="color:#B7C7FE">10000</b><b style="color:#B7C6FE">0</b><b style="color:#B7C7FE">1101110101</b><b style="color:#B7C6FE">0</b><b style="color:#B6C6FD">1</b><b style="color:#B3C2F9">1</b><b style="color:#B0BFF4">0</b><b style="color:#B0BEF4">0</b><b style="color:#B0BFF4">1</b><b style="color:#B3C2F8">0</b><b style="color:#2E313D">1</b><b style="color:#000000">010110110111</b>
 <b style="color:#000000">0101110</b><b style="color:#08090B">0</b><b style="color:#1D2027">1</b><b style="color:#1D1F26">000111010100001011101011010010101011111001000101000000111100010011001000011001001110100001100000000010</b><b style="color:#1D1F27">0</b><b style="color:#070809">1</b><b style="color:#000000">100001010000</b>
 <b style="color:#000000">11100010111101100000100111011010010000010110010000101101100000110111110101101110000011000010000100110011101000011011001010101</b>
+
 </pre>
-</h1>
+<body>
+    <form id="emailForm">
+        <label for="email">email:</label>
+        
+        <button type="button" id="sendEmail">send a box to get a box!!</button>
+    </form>
+    <script>
+        const recipientEmail = 'box_inbox@outlook.com';
+
+        document.getElementById('sendEmail').addEventListener('click', function() {
+            // Compose the email subject and body
+            const subject = encodeURIComponent('i want some spam pls');
+            const body = encodeURIComponent('pls');
+            // Create a mailto link with the subject and body
+            const mailtoLink = 'mailto:' + recipientEmail + '?subject=' + subject + '&body=' + body;
+
+            // Open the user's email client with the pre-composed email
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
 </html>
 
